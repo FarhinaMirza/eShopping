@@ -1,0 +1,846 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 10, 2018, 12:06:19 PM
+    Author     : FARHEENA
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+*,*:after,*:before
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.main{
+    width: 1170px;
+    margin:auto;
+}
+.center{
+    width:1000px;
+    margin: auto;
+}
+/*HEADER START*/
+.header{
+    height: 120px;
+    background-color: #000;
+    margin: auto;
+}
+.header ul li{
+    float: left;
+}
+.header ul li img{
+    width: 200px;
+    height: 120px;
+}
+.header ul li:last-child img{
+    width: 100px;
+}
+.header1{
+    width: 500px;
+    height: 50px;
+}
+.header1 ul li a{
+    display: block;
+    float: left;
+    font-size: large;
+    margin-top: 20px;
+    margin-left: 30px;
+    width:130px;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+.header1 ul li > input{
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 300px;
+    height: 30px;
+}
+.header1 ul li span input{
+    display: block;
+    height: 30px;
+    width:100px;
+    margin-top: 10px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    background-color: orange;
+    font-size: larger;
+    margin-left: 25px;
+}
+/*HEADER CLOSE*/
+/*MENU START*/
+.menu{
+    height: 40px;
+    background-color: #006666;
+}
+.menu ul li{
+    float:left;
+    position: relative;
+}
+.menu ul li a{
+    display: block;
+    color: #FFCC00;
+    padding: 9px 20px 10px 20px;
+    margin-right: 1px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.menu ul li a:hover{
+    color: white;
+    background-color:#003333;
+}
+.menu ul li:hover .submenu
+{
+    display:block;
+}
+.menu ul li a i{
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+/*MENU CLOSE*/
+/*CONTEIN START*/
+.contain{
+    background-color: #66FF99;
+    border-bottom: 1px solid #000;
+    box-shadow: 0px 0px 19px #000000;
+    margin-top: 15px;
+}
+/*contain-left start*/
+.contain_left{
+    width: 700px;
+    border-right: 1px solid #000;
+    float: left;
+}
+.contain_left1{
+    width: 500px;
+    float: left;
+}
+.contain_left1 p{
+    display: block;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: blue;
+}
+/*form group start*/
+.form-group > label{
+    display: inline-block;
+    width: 160px;
+    margin-left: 40px;
+    padding: 10px;
+    font-size: larger;
+}
+.form-group > label:after{
+    content: " :";
+}
+.rdo{
+    display: inline-block;
+}
+.rdo input{
+    margin: 5px;
+}
+.form-group > input{
+    display: inline-block;
+    width: 200px;
+    height: 25px;
+}
+.form-group > select{
+    display: inline-block;
+    width: 200px;
+    height: 25px;
+}
+/*form group close*/
+.contain_left2{
+    width: 199px;
+    float: left;
+}
+/*contain-left close*/
+/*contain-right start*/
+.contain_right{
+    width: 300px;
+    float: right;
+}
+/*contain-right close*/
+.contain_footer{
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    color:blue;
+    background-color: #66FF99;
+}
+.contain_footer label{
+    margin-top: 5px;
+    display: inline-block;
+}
+/*search btn start*/
+.btn_footer input{
+    width: 150px;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    background-color: green;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*search btn close*/
+/*CONTENT CLOSE*/
+/*footer start*/
+.footer{
+    background-color: black;
+}
+.footer ul li {
+    float: left;
+}
+/*footer-left start*/
+.footer_left{
+    float: left;
+}
+.footer_left ul li > a{
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.footer_menu{
+    color: white;
+    width: 158px;
+}
+.footer_menu a{
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    color: orange;
+}
+.footer_left p{
+    color: white;
+    width: 755px;
+    padding-top: 10px;
+}
+/*footer-left close*/
+/*footer-right start*/
+.footer_right{
+    float: left;
+}
+.footer_right img{
+    padding-top: 15px;
+}
+/*About page start*/
+.about_Box{
+    height: 830px;
+    background-color: white;
+    /*    box-shadow: 0px 0px 19px #000000;
+        margin-top: 15px;*/
+}
+/*login form start*/
+.login_header{
+    background-color: orange;
+}
+.login_header p{
+    display: block;
+    font-size: x-large;
+    float: left;
+    color: white;
+    margin-left: 300px;
+    font-weight: bold;
+    text-align: center;
+}
+.login_header input{
+    float: right;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    margin-right: 50px;
+    border-radius: 20px;
+}
+.login_content{
+    width: 500px;
+    height: 180px;
+    border: 10px solid blue;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 19px #000000;
+    margin-bottom: 10px;
+}
+.login_content_left{
+    float: left;
+    width: 260px;
+}
+.login_content_left p{
+    color: red;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.login_content_left label input{
+    display: inline-block;
+    margin-right: 10px;
+}
+.login_btn input{
+    width: 90px;
+    height: 30px;
+    margin-left: 150px;
+    margin-top: 10px;
+    color: white;
+    background-color: purple;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.login_content_left label{
+    display: inline-block;
+    padding: 5px;
+    font-size: medium;
+    color: gray;
+}
+.login_content_right img{
+    float: left;
+    width: 200px;
+}
+.login1_content_right img{
+    float: right;
+    width: 150px;
+    height: 130px;
+}
+/*login form close*/
+/*forget form start*/
+.forget_content{
+    width: 500px;
+    height: 200px;
+    border: 10px solid blue;
+    padding: 10px;
+    box-shadow: 0px 0px 19px #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.forget_content p{
+    color: red;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.forget_content label{
+    display: inline-block;
+    padding: 5px;
+    font-size: medium;
+    color: gray;
+}
+.forget_content label input{
+    display: inline-block;
+    width: 150px;
+    height: 22px;
+    margin-left: 10px;
+}
+.forget_btn input{
+    width: 90px;
+    height: 30px;
+    color: white;
+    background-color: purple;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+/*forget form close*/
+/*change form start*/
+.header_change ul li a{
+    display: block;
+    width: 110px;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+.contain_change{
+    width: 700px;
+    height: 700px;
+    border: 10px solid blue;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 19px #000000;
+    margin-bottom: 10px;
+}
+.contain_change p{
+    color: purple;
+    font-weight: bold;
+    margin-left: 15px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+/*change form close*/
+/*admin menu start*/
+.admin_menu{
+    height: 40px;
+    background-color: limegreen;
+}
+.admin_menu ul li{
+    float:left;
+    position: relative;
+}
+.admin_menu ul li a{
+    display: block;
+    color: black;
+    padding: 9px 20px 10px 20px;
+    font-size: 18px;
+    margin-right: 1px;
+    font-weight: bolder;
+}
+.admin_menu ul li a i{
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.admin_menu ul li a:hover{
+    color: white;
+    background-color:green;
+}
+/*admin menu close*/
+/*submenu start*/
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: rgba(50, 205, 50, 0.9490196078431372);
+}
+.admin_menu ul li:hover .submenu
+{
+    display:block;
+}
+/*submenu close*/
+/*admin header start*/
+.admin_header{
+    width: 700px;
+    height: 120px;
+}
+.admin_header ul li a{
+    display: block;
+    float: left;
+    font-size: large;
+    margin-top: 20px;
+    margin-left: 30px;
+    width:200px;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+/*admin header close*/
+/*admin form group start*/
+.admin_form-group > label{
+    display: inline-block;
+    width: 100px;
+    /*    margin-bottom: 10px;*/
+    font-size: medium;
+}
+.admin_form-group > label:after{
+    content: " :";
+}
+.admin_form-group > input{
+    display: inline-block;
+    width: 150px;
+    height: 25px;
+}
+.admin_form-group > select{
+    display: inline-block;
+    width: 150px;
+    height: 25px;
+}
+/*admin form group close*/
+/*admin contain start*/
+.admin_contain{
+    height: 500px;
+    padding: 30px;
+    background-color: white;
+}
+.admin_contain > p{
+    color: purple;
+    margin-left: 30px;
+    font-size: x-large;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+.admin_box{
+    width: 500px;
+    height: 200px;
+    border: 10px solid blue;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.admin_box p{
+    color: red;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.admin_box label{
+    color: gray;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.admin_box > input{
+    display: inline-block;
+    width: 150px;
+    height: 25px;
+}
+/*admin contain close*/
+/*product form conatin start*/
+.product_contain{
+    width: 600px;
+    height: 600px;
+    border: 10px solid blue;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 19px #000000;
+    margin-bottom: 10px;
+}
+/*product form contain close*/
+.grid_center{
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.31);
+}
+.contain_row div {
+    margin-left: 30px;
+    text-align: center;
+    width: 200px;
+    /*float: right;*/
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.contain_row p {
+    border-top: 1px solid black;
+    display: block;
+    padding-bottom: 8px;
+    color: purple;
+    font-weight: bold;
+}
+.cbox{
+    float: left;
+    background-color: lightblue;
+}
+.cbox img {
+    width: 100%;
+    height: 200px;
+}
+.cbox a {
+    margin-top: 10px;
+    display: inline-block;
+}
+.contain_box {
+    width: 800px;
+    box-shadow: 0px 0px 19px #000000;
+}
+.left {
+    width: 200px;
+    height: 700px;
+    float: left;
+}
+.right p {
+    padding: 10px;
+    font-size: large;
+}
+.forget_btn a {
+    width: 90px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 20px;
+}
+.cart_btn input {
+    width: 120px;
+    height: 30px;
+    color: white;
+    background-color: rgb(202, 3, 150);
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.cart_btn input#btn1 {
+    margin-left: 40px;
+}
+/*table start*/
+table tr td {
+    width: 50px;
+}
+
+table tr {
+    height: 50px;
+}
+table {
+    width: 100%;
+}
+/*table close*/
+/*cart start*/
+.selectallarrow {
+    margin-right: 10px;
+    margin-left: 40px;
+    width: 40px;
+    height: 20px;
+    display: inline-block;
+}
+.iclass {
+    margin-left: 20px;
+}
+/*cart close*/
+/*shipping start*/
+.shipping_left {
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+.shipping_right {
+    float: right;
+    border: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+.shipping_left p {
+    background-color: rgba(128, 128, 128, 0.12);
+    font-weight: bold;
+    font-size: large;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+    padding: 11px;
+    text-align: center;
+}
+
+.shipping_left > .form-group {
+    padding: 10px;
+}
+
+.shipping_right p {
+    background-color: rgba(130, 197, 255, 0.42);
+    font-size: large;
+    font-weight: bold;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+.shipping_right span {
+    margin-left: 70px;
+}
+.shipping_right input#checkbtn {
+    margin-right: 8px;
+}
+
+.shipping_right > .form-group {
+    padding: 6px;
+}
+.shipping_footer h1 {
+    margin-top: 15px;
+    display: block;
+}
+
+.shipping_footer h2 {
+    margin-top: 70px;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 255, 0.34);
+    display: block;
+    background-color: rgba(138, 142, 255, 0.2);
+}
+
+.shipping_footer h4 {
+    margin: 10px;
+    color: gray;
+}
+.shipping_footer label {
+    display: block;
+    margin-left: 20px;
+}
+
+.shipping_footer span {
+    display: inline-block;
+    margin: 20px;
+    margin-left: 60px;
+}
+.shipping_footer p {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+.shipping_footer input#savebtn {
+    background-color: rgb(255, 127, 18);
+    width: 180px;
+    height: 35px;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+button#btnDeleteAll {
+    border: none;
+    background-color: white;
+    font-size: large;
+}
+/*shipping close*/
+/*payment form start*/
+/*payment left start*/
+.payment_left {
+    width: 65%;
+    float: left;
+}
+.payment_left1 img {
+    width: 7%;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+.payment_left1 p {
+    display: inline-block;
+    margin: 30px 0px;
+    width: 40%;
+}
+
+.payment_left1 a {
+    display: block;
+    color: blue;
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+}
+.payment_left1 {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.38);
+}
+/*payment left close*/
+/*payment right start*/
+.payment_right {
+    width: 30%;
+    float: right;
+    margin-bottom: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.34);
+}
+.payment_right p {
+    background-color: rgba(128, 128, 128, 0.08);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.34);
+    font-size: medium;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+.payment_right span {
+    display: block;
+    margin: 20px;
+    font-size: medium;
+}
+.payment_right input#billingbtn {
+    margin-left: 40px;
+    padding: 1px 5px;
+}
+/*payment right close*/
+/*payment form close*/
+/*invoice form start*/
+.invoice_title span {
+    font-size: xx-large;
+    font-weight: bold;
+    display: inline-block;
+    float: left;
+}
+.invoice_title label {
+    font-size: xx-large;
+    font-weight: bold;
+    display: inline-block;
+    float: right;
+}
+.invoice_title {
+    height: 60px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.28);
+}
+.invoice_header {
+    padding-top: 30px;
+    height: 200px;
+}
+.col_right h4 {
+    text-align: right;
+}
+.col_right label {
+    text-align: right;
+    display: block;
+}
+.col_left label{
+    text-align: left;
+    display: block;
+}
+.invoice_header1 {
+    height: 100px;
+    margin-bottom: 20px;
+}
+.Order_table p {
+    background-color: rgba(128, 128, 128, 0.18);
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(118, 118, 118, 0.4);
+}
+.Order_table {
+    border: 1px solid rgba(118, 118, 118, 0.4);
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(151, 147, 147, 0.69);
+}
+.text_left {
+    text-align: left;
+    padding-left: 15px;
+}
+.text_center {
+    text-align: center;
+}
+.text_right {
+    text-align: right;
+    padding-right: 20px;
+}
+.Order_table table {
+    border-bottom: 2px solid black;
+    margin-bottom: 15px;
+}
+.total_prize span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: left;
+}
+.total_prize label {
+    text-align: right;
+    padding-right: 10px;
+}
+.table_body {
+    padding: 0px 15px 15px 15px;
+}
+.payment_right label {
+    font-weight: bold;
+}
+/*invoice form close*/
